@@ -33,7 +33,6 @@ namespace Project_SQL
         {
             DatLich fdatlich = new DatLich();
             fdatlich.ShowDialog();
-            
         }
     }
 }
