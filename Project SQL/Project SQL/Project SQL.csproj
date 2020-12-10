@@ -52,6 +52,9 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HangDA.cs" />
+    <Compile Include="DTO\Hang.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,5 +123,6 @@
     <Content Include="img\user-avatar-with-check-mark.png" />
     <Content Include="img\user.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

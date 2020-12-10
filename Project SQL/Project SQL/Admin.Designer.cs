@@ -55,15 +55,15 @@
             this.dtgvSanpham = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvHang = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtTenHang = new System.Windows.Forms.TextBox();
+            this.txtMaHang = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnSua_Hang = new System.Windows.Forms.Button();
+            this.btnXoa_Hang = new System.Windows.Forms.Button();
+            this.btnNhap_Hang = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
@@ -116,7 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHang)).BeginInit();
             this.panel3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -381,49 +381,49 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Controls.Add(this.dtgvHang);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(607, 471);
             this.panel4.TabIndex = 3;
             // 
-            // dataGridView1
+            // dtgvHang
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 465);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHang.Location = new System.Drawing.Point(3, 3);
+            this.dtgvHang.Name = "dtgvHang";
+            this.dtgvHang.Size = new System.Drawing.Size(601, 465);
+            this.dtgvHang.TabIndex = 0;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.textBox12);
+            this.panel3.Controls.Add(this.txtTenHang);
+            this.panel3.Controls.Add(this.txtMaHang);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.btnSua_Hang);
+            this.panel3.Controls.Add(this.btnXoa_Hang);
+            this.panel3.Controls.Add(this.btnNhap_Hang);
             this.panel3.Location = new System.Drawing.Point(616, 6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(301, 465);
             this.panel3.TabIndex = 2;
             // 
-            // textBox7
+            // txtTenHang
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(132, 62);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(166, 21);
-            this.textBox7.TabIndex = 13;
+            this.txtTenHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenHang.Location = new System.Drawing.Point(132, 62);
+            this.txtTenHang.Name = "txtTenHang";
+            this.txtTenHang.Size = new System.Drawing.Size(166, 21);
+            this.txtTenHang.TabIndex = 13;
             // 
-            // textBox12
+            // txtMaHang
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(132, 17);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(166, 21);
-            this.textBox12.TabIndex = 12;
+            this.txtMaHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaHang.Location = new System.Drawing.Point(132, 17);
+            this.txtMaHang.Name = "txtMaHang";
+            this.txtMaHang.Size = new System.Drawing.Size(166, 21);
+            this.txtMaHang.TabIndex = 12;
             // 
             // label13
             // 
@@ -445,41 +445,42 @@
             this.label14.TabIndex = 5;
             this.label14.Text = "Mã hãng";
             // 
-            // button6
+            // btnSua_Hang
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(161, 362);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(137, 47);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Sửa";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnSua_Hang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.btnSua_Hang.FlatAppearance.BorderSize = 0;
+            this.btnSua_Hang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua_Hang.Location = new System.Drawing.Point(161, 362);
+            this.btnSua_Hang.Name = "btnSua_Hang";
+            this.btnSua_Hang.Size = new System.Drawing.Size(137, 47);
+            this.btnSua_Hang.TabIndex = 3;
+            this.btnSua_Hang.Text = "Sửa";
+            this.btnSua_Hang.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnXoa_Hang
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(83, 415);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(137, 47);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Xóa";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnXoa_Hang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.btnXoa_Hang.FlatAppearance.BorderSize = 0;
+            this.btnXoa_Hang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa_Hang.Location = new System.Drawing.Point(83, 415);
+            this.btnXoa_Hang.Name = "btnXoa_Hang";
+            this.btnXoa_Hang.Size = new System.Drawing.Size(137, 47);
+            this.btnXoa_Hang.TabIndex = 2;
+            this.btnXoa_Hang.Text = "Xóa";
+            this.btnXoa_Hang.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnNhap_Hang
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(3, 362);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(137, 47);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Nhập";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnNhap_Hang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.btnNhap_Hang.FlatAppearance.BorderSize = 0;
+            this.btnNhap_Hang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhap_Hang.Location = new System.Drawing.Point(3, 362);
+            this.btnNhap_Hang.Name = "btnNhap_Hang";
+            this.btnNhap_Hang.Size = new System.Drawing.Size(137, 47);
+            this.btnNhap_Hang.TabIndex = 0;
+            this.btnNhap_Hang.Text = "Nhập";
+            this.btnNhap_Hang.UseVisualStyleBackColor = false;
+            this.btnNhap_Hang.Click += new System.EventHandler(this.btnNhap_Hang_Click);
             // 
             // tabPage3
             // 
@@ -956,7 +957,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHang)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1002,15 +1003,15 @@
         private System.Windows.Forms.DataGridView dtgvSanpham;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvHang;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtTenHang;
+        private System.Windows.Forms.TextBox txtMaHang;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnSua_Hang;
+        private System.Windows.Forms.Button btnXoa_Hang;
+        private System.Windows.Forms.Button btnNhap_Hang;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
