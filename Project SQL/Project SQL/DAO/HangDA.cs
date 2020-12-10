@@ -47,6 +47,25 @@ namespace Project_SQL.DAO
             return result > 0;
         }
 
+        // Hàm Update hãng
+
+        public bool Update_Hang(string name, int id)
+        {
+            string query = string.Format("UPDATE dbo.Category SET nameCategory = N'{0}' WHERE idCategory = {1}", name, id);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        // Hàm xóa thông tin hãng
+        public bool Delete_Hang(int id)
+        {
+            string query = string.Format("Delete Category where idCategory = {0}", id);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
 
     }
 }

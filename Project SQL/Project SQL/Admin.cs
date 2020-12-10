@@ -25,16 +25,47 @@ namespace Project_SQL
         private void btnNhap_Hang_Click(object sender, EventArgs e)
         {
             string name = txtTenHang.Text;
-            string id = txtMaHang.Text;
+           
             if (HangDA.Instance.Insert_Hang(name))
             {
-                MessageBox.Show("Thực hiện thêm thông tin tên  thành công");
+                MessageBox.Show("Thực hiện thêm thông tin hãng thành công");
                 Load_Hang();
 
             }
             else
             {
-                MessageBox.Show("Thực hiện việc thêm thông tin bàn không đúng");
+                MessageBox.Show("Thực hiện việc thêm thông tin hãng không đúng");
+            }
+        }
+
+        private void btnSua_Hang_Click(object sender, EventArgs e)
+        {
+            string name = txtTenHang.Text;
+            int id = Convert.ToInt32(txtMaHang.Text);
+            if (HangDA.Instance.Update_Hang(name, id))
+            {
+                MessageBox.Show("Thực hiện chỉnh sửa thông tin hãng thành công");
+                Load_Hang();
+
+            }
+            else
+            {
+                MessageBox.Show("Thực hiện việc thêm thông tin hãng không đúng");
+            }
+        }
+
+        private void btnXoa_Hang_Click(object sender, EventArgs e)
+        { 
+            int id = Convert.ToInt32(txtMaHang.Text);
+            if (HangDA.Instance.Delete_Hang(id))
+            {
+                MessageBox.Show("Thực hiện chỉnh sửa thông tin hãng thành công");
+                Load_Hang();
+
+            }
+            else
+            {
+                MessageBox.Show("Thực hiện việc thêm thông tin hãng không đúng");
             }
         }
     }

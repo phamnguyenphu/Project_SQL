@@ -389,7 +389,10 @@
             // 
             // dtgvHang
             // 
+            this.dtgvHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHang.GridColor = System.Drawing.SystemColors.Control;
             this.dtgvHang.Location = new System.Drawing.Point(3, 3);
             this.dtgvHang.Name = "dtgvHang";
             this.dtgvHang.Size = new System.Drawing.Size(601, 465);
@@ -456,6 +459,7 @@
             this.btnSua_Hang.TabIndex = 3;
             this.btnSua_Hang.Text = "Sửa";
             this.btnSua_Hang.UseVisualStyleBackColor = false;
+            this.btnSua_Hang.Click += new System.EventHandler(this.btnSua_Hang_Click);
             // 
             // btnXoa_Hang
             // 
@@ -468,6 +472,7 @@
             this.btnXoa_Hang.TabIndex = 2;
             this.btnXoa_Hang.Text = "Xóa";
             this.btnXoa_Hang.UseVisualStyleBackColor = false;
+            this.btnXoa_Hang.Click += new System.EventHandler(this.btnXoa_Hang_Click);
             // 
             // btnNhap_Hang
             // 
