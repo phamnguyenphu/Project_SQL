@@ -129,3 +129,15 @@ as
 	begin
 		delete from Category where idCategory = @idCategory
 	end
+go
+
+-- tạo store produre lấy dữ liệu theo id trong bảng user_info
+create proc getDataById
+@id INT
+as
+begin
+	select * from User_info where idUser = @id
+end
+go
+
+exec getDataById 1

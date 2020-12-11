@@ -50,7 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNhapSanPham = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtgvSanpham = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -84,9 +84,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnNhapNhanVien = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtgvNhanVien = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
@@ -107,8 +107,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dtgvKhachHang = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -121,11 +123,11 @@
             this.tabPage3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -182,7 +184,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnNhapSanPham);
             this.panel2.Location = new System.Drawing.Point(616, 6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(301, 465);
@@ -339,17 +341,17 @@
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnNhapSanPham
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Nhập";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnNhapSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.btnNhapSanPham.FlatAppearance.BorderSize = 0;
+            this.btnNhapSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhapSanPham.Location = new System.Drawing.Point(3, 362);
+            this.btnNhapSanPham.Name = "btnNhapSanPham";
+            this.btnNhapSanPham.Size = new System.Drawing.Size(137, 47);
+            this.btnNhapSanPham.TabIndex = 0;
+            this.btnNhapSanPham.Text = "Nhập";
+            this.btnNhapSanPham.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -501,6 +503,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label16);
             this.panel6.Controls.Add(this.label15);
@@ -519,7 +522,7 @@
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.button10);
             this.panel6.Controls.Add(this.button11);
-            this.panel6.Controls.Add(this.button12);
+            this.panel6.Controls.Add(this.btnNhapNhanVien);
             this.panel6.Location = new System.Drawing.Point(614, 6);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(305, 465);
@@ -686,40 +689,41 @@
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(82, 415);
+            this.button11.Location = new System.Drawing.Point(3, 415);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(137, 47);
             this.button11.TabIndex = 2;
             this.button11.Text = "Xóa";
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnNhapNhanVien
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(3, 362);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(137, 47);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Nhập";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnNhapNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.btnNhapNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnNhapNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhapNhanVien.Location = new System.Drawing.Point(3, 362);
+            this.btnNhapNhanVien.Name = "btnNhapNhanVien";
+            this.btnNhapNhanVien.Size = new System.Drawing.Size(137, 47);
+            this.btnNhapNhanVien.TabIndex = 0;
+            this.btnNhapNhanVien.Text = "Nhập";
+            this.btnNhapNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhapNhanVien.Click += new System.EventHandler(this.btnNhapNhanVien_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dataGridView2);
+            this.panel5.Controls.Add(this.dtgvNhanVien);
             this.panel5.Location = new System.Drawing.Point(6, 6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(606, 468);
             this.panel5.TabIndex = 4;
             // 
-            // dataGridView2
+            // dtgvNhanVien
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(599, 465);
-            this.dataGridView2.TabIndex = 0;
+            this.dtgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvNhanVien.Location = new System.Drawing.Point(3, 0);
+            this.dtgvNhanVien.Name = "dtgvNhanVien";
+            this.dtgvNhanVien.Size = new System.Drawing.Size(599, 465);
+            this.dtgvNhanVien.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -735,6 +739,7 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.button6);
             this.panel8.Controls.Add(this.label19);
             this.panel8.Controls.Add(this.label20);
             this.panel8.Controls.Add(this.textBox18);
@@ -900,7 +905,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(82, 415);
+            this.button5.Location = new System.Drawing.Point(3, 415);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(137, 47);
             this.button5.TabIndex = 2;
@@ -918,22 +923,23 @@
             this.button9.TabIndex = 0;
             this.button9.Text = "Nhập";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.dataGridView3);
+            this.panel7.Controls.Add(this.dtgvKhachHang);
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(606, 468);
             this.panel7.TabIndex = 5;
             // 
-            // dataGridView3
+            // dtgvKhachHang
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(602, 465);
-            this.dataGridView3.TabIndex = 0;
+            this.dtgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvKhachHang.Location = new System.Drawing.Point(0, 0);
+            this.dtgvKhachHang.Name = "dtgvKhachHang";
+            this.dtgvKhachHang.Size = new System.Drawing.Size(602, 465);
+            this.dtgvKhachHang.TabIndex = 0;
             // 
             // tabPage5
             // 
@@ -944,6 +950,32 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Tài khoản";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(161, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 47);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Cập Nhật";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(161, 415);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(137, 47);
+            this.button6.TabIndex = 27;
+            this.button6.Text = "Cập Nhật";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Admin
             // 
@@ -969,12 +1001,12 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -987,7 +1019,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNhapSanPham;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -1036,9 +1068,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnNhapNhanVien;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtgvNhanVien;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label19;
@@ -1059,8 +1091,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dtgvKhachHang;
         private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
     }
 }
 

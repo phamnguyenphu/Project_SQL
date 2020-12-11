@@ -17,6 +17,17 @@ namespace Project_SQL
         {
             InitializeComponent();
             Load_Hang();
+            loadNhanVien();
+            loadKhachHang();
+        }
+
+        void loadKhachHang()
+        {
+            dtgvKhachHang.DataSource = KhachHangDA.Instance.danhSachKhachHang();
+        }
+        void loadNhanVien()
+        {
+            dtgvNhanVien.DataSource = NhanVienDA.Instance.danhSachNhanVien();
         }
         void Load_Hang()
         {
@@ -67,6 +78,34 @@ namespace Project_SQL
             {
                 MessageBox.Show("Thực hiện việc thêm thông tin hãng không đúng");
             }
+        }
+
+        private void btnNhapNhanVien_Click(object sender, EventArgs e)
+        {
+            Nhap_Nhan_Vien fnhapNhanVien = new Nhap_Nhan_Vien();
+            fnhapNhanVien.ShowDialog();
+        }
+
+   
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            loadNhanVien();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            KhachHang fnhapKhachHang = new KhachHang();
+            fnhapKhachHang.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            loadKhachHang();
+        }
+
+        void loadKhachHangTheoId(int id)
+        {
+            
         }
     }
 }
