@@ -52,8 +52,11 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BS Layer\BLLogin.cs" />
+    <Compile Include="BS Layer\BLSanPham.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\HangDA.cs" />
+    <Compile Include="DB Layer\DBMain.cs" />
     <Compile Include="DTO\Hang.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
